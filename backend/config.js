@@ -5,6 +5,7 @@ const pool = mysql.createPool({
   user: process.env.DB_USER, // e.g., 'root'
   password: process.env.DB_PASS, // your MySQL password
   database: process.env.DB_NAME, // the name of your database
+  JWT_SECRET: process.env.JWT_SECRET,
   waitForConnections: true,
   connectionLimit: 10, // Maximum number of connections in the pool
   queueLimit: 0, // Unlimited queue length
