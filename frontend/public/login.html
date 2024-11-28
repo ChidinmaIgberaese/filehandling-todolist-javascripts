@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="/">My To-Do App</a>
+      </div>
+      <div class="navbar-links">
+        <a href="/login.html">Login</a>
+        <a href="/register.html">Register</a>
+      </div>
+    </nav>
+
+    <div class="form-container">
+      <h1>Login</h1>
+      <form action="/login" method="POST">
+        <div class="input-wrapper">
+          <span class="material-icons">email</span>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="input-wrapper">
+          <span class="material-icons">lock</span>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+      <a href="/register">Don't have an account? Register here</a>
+    </div>
+  </body>
+</html>

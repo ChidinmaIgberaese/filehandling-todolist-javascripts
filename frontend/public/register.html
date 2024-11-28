@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="/">My To-Do App</a>
+      </div>
+      <div class="navbar-links">
+        <a href="/login.html" class="nav-link">Login</a>
+        <a href="/register.html" class="nav-link active">Register</a>
+        <!-- Active class for register -->
+      </div>
+    </nav>
+
+    <div class="form-container">
+      <h1>Register</h1>
+      <form action="/register" method="POST">
+        <div class="input-wrapper">
+          <span class="material-icons" aria-label="Username">person</span>
+          <input type="text" name="username" placeholder="Username" required />
+        </div>
+        <div class="input-wrapper">
+          <span class="material-icons" aria-label="Email">email</span>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="input-wrapper">
+          <span class="material-icons" aria-label="Password">lock</span>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <a href="/login">Already have an account? Log in</a>
+    </div>
+  </body>
+</html>
